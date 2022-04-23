@@ -1,0 +1,115 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #202124;
+  box-shadow: 0px 0px 5px 2px hsl(0, 0%, 50%);
+  height: 66px;
+}
+
+main {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+  margin-top: 66px;
+}
+.note {
+  width: 250px;
+  border-radius: 11px;
+  color: white;
+  margin: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.note-title{
+  margin-top: 14px;
+  margin-left: 14px;
+  margin-bottom: 14px;
+  font-size: 1.5em;
+}
+.navigation-icons {
+  margin-right: 14px;
+  width: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.note-text {
+  margin-right: 14px;
+  margin-left: 14px;
+  /* margin-bottom: 14px; */
+  margin-top: 0;
+  text-align: justify;
+}
+.search-form{
+  width: 40%;
+}
+.search-input {
+  width: 100%;
+  margin: 0;
+  height: 45px;
+  border-radius: 9px;
+  background-color: #525355;
+  border: none;
+  text-indent: 10px;
+  font-size: 1.2em;
+  color: #F4F4F4;
+}
+
+.del-button{
+  border-radius: 25px;
+  width: 28px;
+  height: 28px;
+  background-color: inherit;
+  border-color: #141414;
+  visibility: hidden;
+  color: white;
+  position: absolute;
+}
+
+.del-button:hover{
+  cursor: pointer;
+}
+
+.note-container:hover .del-button {
+  visibility: visible;
+}
+.add-button{
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+
+}
+
+#note-1{
+  background-color: #BB0A21;
+}
+#note-2{
+  background-color: #CCA43B;
+}
+#note-3{
+  background-color: #0085FF;
+}
+#note-4{
+  background-color: #84DCCF;
+  color: black;
+}
+#note-5{
+  background-color: #E5E5E5;
+  color: black;
+}
+#note-6{
+  background-color: #4B88A2;
+}
+
+@media (max-width: 900px)  {
+  .add-button {
+    position: static;
+    margin: auto;
+    width: 60px;
+  }
+
+}
